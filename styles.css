@@ -34,11 +34,16 @@
     color: white;
 }
 
-.product-margin {
+.product-margin,
+.form-margin {
     margin-top: 7rem;
 }
 
 .img-responsive {
     width: auto;
     height: 200px;
+}
+
+.form-height {
+    height: 140px;
 }
