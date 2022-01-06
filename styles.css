@@ -1,3 +1,43 @@
+.text-red {
+    color: #bd2c0e;
+}
+
+.intro-img {
+    margin-bottom: -6rem;
+}
+
+.text-yellow {
+    color: #ffc511;
+}
+
+.bg-yellow,
+.btn-yellow {
+    background-color: #ffc511;
+}
+
+.bg-brown,
+.btn-brown {
+    background-color: #5f0a00;
+}
+
+.btn-brown:hover {
+    background-color: #360500;
+}
+
+.btn-outline-brown {
+    border-color: #bd2c0e;
+    color: #bd2c0e;
+}
+
+.btn-outline-brown:hover {
+    background-color: #bd2c0e;
+    color: white;
+}
+
+.product-margin {
+    margin-top: 7rem;
+}
+
 .img-responsive {
     width: auto;
     height: 200px;
