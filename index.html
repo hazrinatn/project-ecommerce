@@ -8,7 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
     <link rel="stylesheet" href="styles.css">
-    <title>E-commerce</title>
+    <title>The Burger Brothers - Homepage</title>
 </head>
 
 <body>
@@ -49,7 +49,7 @@
 
                     <form class="d-flex d-none d-lg-block">
                         <input class="form-control-sm mx-1 border-0" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-secondary btn-sm" type="submit">Search</button>
+                        <button class="btn btn-success btn-sm" type="submit">Search</button>
                     </form>
                 </div>
             </div>
@@ -67,7 +67,7 @@
                         <div class="display-2 fw-bolder">DELICIOUSLY MOUTHWATERING</div>
                         <div class="display-3 fw-light text-red">BURGERS AND SANDWICHES</div>
                     </h1>
-                    <p class="lead my-4 text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <p class="lead my-4 text-muted">Premium handmade burgers and sandwiches made from high quality ingredients.</p>
                     <a href="#product" class="btn text-white rounded-pill bg-brown">Try Now &#8594;</a>
                 </div>
                 <div class="col-md-3 text-end d-none d-md-block">
@@ -85,6 +85,7 @@
         <div class="container">
             <div class="row my-4">
 
+                <!-- Bacon Burger -->
                 <div class="col-md-4 col-lg-3 my-3">
                     <div class="card bg-light shadow-sm">
                         <div class="d-flex justify-content-center bg-yellow rounded">
@@ -101,13 +102,37 @@
                             </div>
                             <p class="card-text display-6">$4.32</p>
                             <div class="d-flex justify-content-between">
-                                <a href="#" class="btn btn-brown text-white me-2">Details</a>
+                                <a href="#" class="btn btn-brown text-white me-2" data-bs-toggle="modal" data-bs-target="#baconBurger" tabindex="-1" aria-labelledby="baconBurgerModalLabel" aria-hidden="true">Details</a>
                                 <button class="btn btn-outline-brown display-1 fw-bolder"> &#43;</button>
                             </div>
                         </div>
                     </div>
                 </div>
 
+                <!-- Bacon Burger Modal -->
+                <div class="modal fade" id="baconBurger">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="baconBurgerModalLabel">Bacon Burger</h5>
+                                <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="bg-yellow d-flex justify-content-center rounded">
+                                    <img src="assets/bacon-burger.png" alt="Bacon Burger" class="card-img-top img-fluid img-responsive">
+                                </div>
+                                <p class="mt-2">Ingredients: Bacon, Beef, Melted Cheese, Pickles, BBQ sauce, and Mayonaise</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button class="btn btn-success" data-bs-dismiss="modal">OK</button>
+                                <button class="btn btn-outline-brown"> Add to cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Egg Benedict Burger -->
                 <div class="col-md-4 col-lg-3 my-3">
                     <div class="card bg-light shadow-sm ">
                         <div class="d-flex justify-content-center bg-yellow rounded">
@@ -124,20 +149,44 @@
                             </div>
                             <p class="card-text display-6">$5.21</p>
                             <div class="d-flex justify-content-between">
-                                <a href="#" class="btn btn-brown text-white me-2">Details</a>
+                                <a href="#" class="btn btn-brown text-white me-2" data-bs-toggle="modal" data-bs-target="#eggBenedictBurger" tabindex="-1" aria-labelledby="eggBenedictBurgerModalLabel" aria-hidden="true">Details</a>
                                 <button class="btn btn-outline-brown display-1 fw-bolder"> &#43;</button>
                             </div>
                         </div>
                     </div>
                 </div>
 
+                <!-- Egg Benedict Burger Modal -->
+                <div class="modal fade" id="eggBenedictBurger">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="eggBenedictBurgerModalLabel">Egg Benedict Burger</h5>
+                                <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="bg-yellow d-flex justify-content-center rounded">
+                                    <img src="assets/egg-benedict-burger.png" alt="Egg Benedict Burger" class="card-img-top img-fluid img-responsive">
+                                </div>
+                                <p class="mt-2">Ingredients: Egg Benedict, Beef, Ham, Melted Cheese, and Mayonaise</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button class="btn btn-success" data-bs-dismiss="modal">OK</button>
+                                <button class="btn btn-outline-brown"> Add to cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Chili Sauce Burger -->
                 <div class="col-md-4 col-lg-3 my-3">
                     <div class="card bg-light shadow-sm">
                         <div class="d-flex justify-content-center bg-yellow rounded">
-                            <img src="assets/chilli-sauce-burger.png" alt="Chilli Sauce burger" class="card-img-top img-fluid img-responsive">
+                            <img src="assets/chili-sauce-burger.png" alt="Chili Sauce burger" class="card-img-top img-fluid img-responsive">
                         </div>
                         <div class="card-body pt-4">
-                            <h5 class="card-title">Chilli Sauce Burger</h5>
+                            <h5 class="card-title">Chili Sauce Burger</h5>
                             <div class="py-1">
                                 <i class="bi bi-star-fill text-warning"></i>
                                 <i class="bi bi-star-fill text-warning"></i>
@@ -147,13 +196,37 @@
                             </div>
                             <p class="card-text display-6">$4.65</p>
                             <div class="d-flex justify-content-between">
-                                <a href="#" class="btn btn-brown text-white me-2">Details</a>
+                                <a href="#" class="btn btn-brown text-white me-2" data-bs-toggle="modal" data-bs-target="#chiliSauceBurger" tabindex="-1" aria-labelledby="chiliSauceBurgerModalLabel" aria-hidden="true">Details</a>
                                 <button class="btn btn-outline-brown display-1 fw-bolder"> &#43;</button>
                             </div>
                         </div>
                     </div>
                 </div>
 
+                <!-- Chili Sauce Burger Modal -->
+                <div class="modal fade" id="chiliSauceBurger">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="chiliSauceBurgerModalLabel">Chili Sauce Burger</h5>
+                                <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="bg-yellow d-flex justify-content-center rounded">
+                                    <img src="assets/chili-sauce-burger.png" alt="Chili Sauce Burger" class="card-img-top img-fluid img-responsive">
+                                </div>
+                                <p class="mt-2">Ingredients: Chili Sauce, Bacon, Beef, Pickles, Lettuces, Tomatoes, and Mayonaise</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button class="btn btn-success" data-bs-dismiss="modal">OK</button>
+                                <button class="btn btn-outline-brown"> Add to cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Mac and Cheese Burger -->
                 <div class="col-md-4 col-lg-3 my-3">
                     <div class="card bg-light shadow-sm">
                         <div class="d-flex justify-content-center bg-yellow rounded">
@@ -170,13 +243,37 @@
                             </div>
                             <p class="card-text display-6">$5.52</p>
                             <div class="d-flex justify-content-between">
-                                <a href="#" class="btn btn-brown text-white me-2">Details</a>
+                                <a href="#" class="btn btn-brown text-white me-2" data-bs-toggle="modal" data-bs-target="#macAndCheeseBurger" tabindex="-1" aria-labelledby="macAndCheeseBurgerModalLabel" aria-hidden="true">Details</a>
                                 <button class="btn btn-outline-brown display-1 fw-bolder"> &#43;</button>
                             </div>
                         </div>
                     </div>
                 </div>
 
+                <!-- Mac and Cheese Burger Modal -->
+                <div class="modal fade" id="macAndCheeseBurger">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="macAndCheeseBurgerModalLabel">Mac and Cheese Burger</h5>
+                                <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="bg-yellow d-flex justify-content-center rounded">
+                                    <img src="assets/macandcheese-burger.png" alt="Mac and Cheese Burger" class="card-img-top img-fluid img-responsive">
+                                </div>
+                                <p class="mt-2">Ingredients: Mac and Cheese, Chicken, Shredded Cheese, Red Cabbage, and Mayonaise</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button class="btn btn-success" data-bs-dismiss="modal">OK</button>
+                                <button class="btn btn-outline-brown"> Add to cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Mushroom Burger -->
                 <div class="col-md-4 col-lg-3 my-3">
                     <div class="card bg-light shadow-sm">
                         <div class="d-flex justify-content-center bg-yellow rounded">
@@ -193,13 +290,37 @@
                             </div>
                             <p class="card-text display-6">$5.47</p>
                             <div class="d-flex justify-content-between">
-                                <a href="#" class="btn btn-brown text-white me-2">Details</a>
+                                <a href="#" class="btn btn-brown text-white me-2" data-bs-toggle="modal" data-bs-target="#mushroomBurger" tabindex="-1" aria-labelledby="mushroomBurgerModalLabel" aria-hidden="true">Details</a>
                                 <button class="btn btn-outline-brown display-1 fw-bolder"> &#43;</button>
                             </div>
                         </div>
                     </div>
                 </div>
 
+                <!-- Mushroom Burger Modal -->
+                <div class="modal fade" id="mushroomBurger">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="mushroomBurgerModalLabel">Mushroom Burger</h5>
+                                <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="bg-yellow d-flex justify-content-center rounded">
+                                    <img src="assets/mushroom-burger.png" alt="Mushroom Burger" class="card-img-top img-fluid img-responsive">
+                                </div>
+                                <p class="mt-2">Ingredients: Mushroom, Caramelized Onion, Beef, Melted Cheese, and Red Cabbage</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button class="btn btn-success" data-bs-dismiss="modal">OK</button>
+                                <button class="btn btn-outline-brown"> Add to cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Triple Beef Burger -->
                 <div class="col-md-4 col-lg-3 my-3">
                     <div class="card bg-light shadow-sm">
                         <div class="d-flex justify-content-center bg-yellow rounded">
@@ -216,20 +337,44 @@
                             </div>
                             <p class="card-text display-6">$7.15</p>
                             <div class="d-flex justify-content-between">
-                                <a href="#" class="btn btn-brown text-white me-2">Details</a>
+                                <a href="#" class="btn btn-brown text-white me-2" data-bs-toggle="modal" data-bs-target="#tripleBeefBurger" tabindex="-1" aria-labelledby="tripleBeefBurgerModalLabel" aria-hidden="true">Details</a>
                                 <button class="btn btn-outline-brown display-1 fw-bolder"> &#43;</button>
                             </div>
                         </div>
                     </div>
                 </div>
 
+                <!-- Triple Beef Burger Modal -->
+                <div class="modal fade" id="tripleBeefBurger">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="tripleBeefBurgerModalLabel">Triple Beef Burger</h5>
+                                <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="bg-yellow d-flex justify-content-center rounded">
+                                    <img src="assets/triple-beef-burger.png" alt="Triple Beef Burger" class="card-img-top img-fluid img-responsive">
+                                </div>
+                                <p class="mt-2">Ingredients: Triple Beefs, Melted Cheese, Onions, Tomatoes, and Lettuces</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button class="btn btn-success" data-bs-dismiss="modal">OK</button>
+                                <button class="btn btn-outline-brown"> Add to cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Double Chicken Burger -->
                 <div class="col-md-4 col-lg-3 my-3">
                     <div class="card bg-light shadow-sm">
                         <div class="d-flex justify-content-center bg-yellow rounded">
-                            <img src="assets/triple-chicken-burger.png" alt="Triple Chicken burger" class="card-img-top img-fluid img-responsive">
+                            <img src="assets/double-chicken-burger.png" alt="Double Chicken burger" class="card-img-top img-fluid img-responsive">
                         </div>
                         <div class="card-body pt-4">
-                            <h5 class="card-title">Triple Chicken Burger</h5>
+                            <h5 class="card-title">Double Chicken Burger</h5>
                             <div class="py-1">
                                 <i class="bi bi-star-fill text-warning"></i>
                                 <i class="bi bi-star-fill text-warning"></i>
@@ -237,15 +382,39 @@
                                 <i class="bi bi-star-fill text-warning"></i>
                                 <i class="bi bi-star-fill text-warning"></i>
                             </div>
-                            <p class="card-text display-6">$6.89</p>
+                            <p class="card-text display-6">$6.24</p>
                             <div class="d-flex justify-content-between">
-                                <a href="#" class="btn btn-brown text-white me-2">Details</a>
+                                <a href="#" class="btn btn-brown text-white me-2" data-bs-toggle="modal" data-bs-target="#doubleChickenBurger" tabindex="-1" aria-labelledby="doubleChickenBurgerModalLabel" aria-hidden="true">Details</a>
                                 <button class="btn btn-outline-brown display-1 fw-bolder"> &#43;</button>
                             </div>
                         </div>
                     </div>
                 </div>
 
+                <!-- Double Chicken Burger Modal -->
+                <div class="modal fade" id="doubleChickenBurger">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="doubleChickenBurgerModalLabel">Double Chicken Burger</h5>
+                                <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="bg-yellow d-flex justify-content-center rounded">
+                                    <img src="assets/double-chicken-burger.png" alt="Double Chicken Burger" class="card-img-top img-fluid img-responsive">
+                                </div>
+                                <p class="mt-2">Ingredients: Double Chicken, Melted Cheese, Tomatoes, Lettuces, and Mayonaise</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button class="btn btn-success" data-bs-dismiss="modal">OK</button>
+                                <button class="btn btn-outline-brown"> Add to cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Spicy Mayo Chicken Burger -->
                 <div class="col-md-4 col-lg-3 my-3">
                     <div class="card bg-light shadow-sm">
                         <div class="d-flex justify-content-center bg-yellow rounded">
@@ -262,13 +431,37 @@
                             </div>
                             <p class="card-text display-6">$4.76</p>
                             <div class="d-flex justify-content-between">
-                                <a href="#" class="btn btn-brown text-white me-2">Details</a>
+                                <a href="#" class="btn btn-brown text-white me-2" data-bs-toggle="modal" data-bs-target="#spicyMayoChickenBurger" tabindex="-1" aria-labelledby="spicyMayoChickenBurgerModalLabel" aria-hidden="true">Details</a>
                                 <button class="btn btn-outline-brown display-1 fw-bolder"> &#43;</button>
                             </div>
                         </div>
                     </div>
                 </div>
 
+                <!-- Spicy Mayo Chicken Burger Modal -->
+                <div class="modal fade" id="spicyMayoChickenBurger">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="spicyMayoChickenBurgerModalLabel">Spicy Mayo Chicken Burger</h5>
+                                <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="bg-yellow d-flex justify-content-center rounded">
+                                    <img src="assets/spicy-mayo-chicken-burger.png" alt="Spicy Mayo Chicken Burger" class="card-img-top img-fluid img-responsive">
+                                </div>
+                                <p class="mt-2">Ingredients: Chicken, Spicy Mayonaise, Melted Cheese, Pickles, Shredded Cabbage, and Chopped Leeks </p>
+                            </div>
+                            <div class="modal-footer">
+                                <button class="btn btn-success" data-bs-dismiss="modal">OK</button>
+                                <button class="btn btn-outline-brown"> Add to cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Pancake Burger -->
                 <div class="col-md-4 col-lg-3 my-3">
                     <div class="card bg-light shadow-sm">
                         <div class="d-flex justify-content-center bg-yellow rounded">
@@ -293,15 +486,39 @@
                                     <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/>
                                   </svg>
                             </div>
-                            <p class="card-text display-6">$4.37</p>
+                            <p class="card-text display-6">$6.37</p>
                             <div class="d-flex justify-content-between">
-                                <a href="#" class="btn btn-brown text-white me-2">Details</a>
+                                <a href="#" class="btn btn-brown text-white me-2" data-bs-toggle="modal" data-bs-target="#pancakeBurger" tabindex="-1" aria-labelledby="pancakeBurgerModalLabel" aria-hidden="true">Details</a>
                                 <button class="btn btn-outline-brown display-1 fw-bolder"> &#43;</button>
                             </div>
                         </div>
                     </div>
                 </div>
 
+                <!-- Pancake Burger Modal -->
+                <div class="modal fade" id="pancakeBurger">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="pancakeBurgerModalLabel">Pancake Burger</h5>
+                                <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="bg-yellow d-flex justify-content-center rounded">
+                                    <img src="assets/pancake-burger.png" alt="Pancake burger" class="card-img-top img-fluid img-responsive">
+                                </div>
+                                <p class="mt-2">Ingredients: Pancake Bun, Mushroom, Double Beef, Melted Cheese, Egg, and Mayonaise</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button class="btn btn-success" data-bs-dismiss="modal">OK</button>
+                                <button class="btn btn-outline-brown"> Add to cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Brioche Burger -->
                 <div class="col-md-4 col-lg-3 my-3">
                     <div class="card bg-light shadow-sm">
                         <div class="d-flex justify-content-center bg-yellow rounded">
@@ -316,22 +533,46 @@
                                 <i class="bi bi-star-fill text-warning"></i>
                                 <i class="bi bi-star text-warning"></i>
                             </div>
-                            <p class="card-text display-6">$5.46</p>
+                            <p class="card-text display-6">$6.17</p>
                             <div class="d-flex justify-content-between">
-                                <a href="#" class="btn btn-brown text-white me-2">Details</a>
+                                <a href="#" class="btn btn-brown text-white me-2" data-bs-toggle="modal" data-bs-target="#briocheBurger" tabindex="-1" aria-labelledby="briocheBurgerModalLabel" aria-hidden="true">Details</a>
                                 <button class="btn btn-outline-brown display-1 fw-bolder"> &#43;</button>
                             </div>
                         </div>
                     </div>
                 </div>
 
+                <!-- Brioche Burger Modal -->
+                <div class="modal fade" id="briocheBurger">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="briocheBurgerModalLabel">Brioche Burger</h5>
+                                <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="bg-yellow d-flex justify-content-center rounded">
+                                    <img src="assets/brioche-burger.png" alt="Brioche burger" class="card-img-top img-fluid img-responsive">
+                                </div>
+                                <p class="mt-2">Ingredients: Brioche Bun, Mushroom, Beef, Melted Cheese, Caramelized Onion, and Mayonaise</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button class="btn btn-success" data-bs-dismiss="modal">OK</button>
+                                <button class="btn btn-outline-brown"> Add to cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Halloumi Vegetarian Burger -->
                 <div class="col-md-4 col-lg-3 my-3">
                     <div class="card bg-light shadow-sm">
                         <div class="d-flex justify-content-center bg-yellow rounded">
-                            <img src="assets/avocado-holloumi-vegetarian-burger.png" alt="Holloumi Vegetarian burger" class="card-img-top img-fluid img-responsive">
+                            <img src="assets/halloumi-vegetarian-burger.png" alt="Halloumi Vegetarian burger" class="card-img-top img-fluid img-responsive">
                         </div>
                         <div class="card-body pt-4">
-                            <h5 class="card-title">Holloumi Vegetarian Burger</h5>
+                            <h5 class="card-title">Halloumi Vegetarian Burger</h5>
                             <div class="py-1">
                                 <i class="bi bi-star-fill text-warning"></i>
                                 <i class="bi bi-star-fill text-warning"></i>
@@ -339,15 +580,39 @@
                                 <i class="bi bi-star-fill text-warning"></i>
                                 <i class="bi bi-star-half text-warning"></i>
                             </div>
-                            <p class="card-text display-6">$5.83</p>
+                            <p class="card-text display-6">$5.31</p>
                             <div class="d-flex justify-content-between">
-                                <a href="#" class="btn btn-brown text-white me-2">Details</a>
+                                <a href="#" class="btn btn-brown text-white me-2" data-bs-toggle="modal" data-bs-target="#halloumiVegetarianBurger" tabindex="-1" aria-labelledby="halloumiVegetarianBurgerModalLabel" aria-hidden="true">Details</a>
                                 <button class="btn btn-outline-brown display-1 fw-bolder"> &#43;</button>
                             </div>
                         </div>
                     </div>
                 </div>
 
+                <!-- Halloumi Vegetarian Burger Modal -->
+                <div class="modal fade" id="halloumiVegetarianBurger">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="halloumiVegetarianBurgerModalLabel">Halloumi Vegetarian Burger</h5>
+                                <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="bg-yellow d-flex justify-content-center rounded">
+                                    <img src="assets/halloumi-vegetarian-burger.png" alt="Halloumi Vegetarian burger" class="card-img-top img-fluid img-responsive">
+                                </div>
+                                <p class="mt-2">Ingredients: Halloumi Cheese, Mashed Avocadoes, Tomatoes, Rucola, and Chili Flakes</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button class="btn btn-success" data-bs-dismiss="modal">OK</button>
+                                <button class="btn btn-outline-brown"> Add to cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Vegan Meat Burger -->
                 <div class="col-md-4 col-lg-3 my-3">
                     <div class="card bg-light shadow-sm">
                         <div class="d-flex justify-content-center bg-yellow rounded">
@@ -362,15 +627,39 @@
                                 <i class="bi bi-star-fill text-warning"></i>
                                 <i class="bi bi-star-fill text-warning"></i>
                             </div>
-                            <p class="card-text display-6">$5.64</p>
+                            <p class="card-text display-6">$6.48</p>
                             <div class="d-flex justify-content-between">
-                                <a href="#" class="btn btn-brown text-white me-2">Details</a>
+                                <a href="#" class="btn btn-brown text-white me-2" data-bs-toggle="modal" data-bs-target="#veganMeatBurger" tabindex="-1" aria-labelledby="veganMeatBurgerModalLabel" aria-hidden="true">Details</a>
                                 <button class="btn btn-outline-brown display-1 fw-bolder"> &#43;</button>
                             </div>
                         </div>
                     </div>
                 </div>
 
+                <!-- Vegan Meat Burger Modal -->
+                <div class="modal fade" id="veganMeatBurger">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="veganMeatBurgerModalLabel">Vegan Meat Burger</h5>
+                                <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="bg-yellow d-flex justify-content-center rounded">
+                                    <img src="assets/vegan-meat-burger.png" alt="Vegan Meat burger" class="card-img-top img-fluid img-responsive">
+                                </div>
+                                <p class="mt-2">Ingredients: Soy-based Cheese, Soy-based Beef, Soy-based Nuggets, Lettuces, Red Onion, and Pickles</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button class="btn btn-success" data-bs-dismiss="modal">OK</button>
+                                <button class="btn btn-outline-brown"> Add to cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Ham Sandwich -->
                 <div class="col-md-4 col-lg-3 my-3">
                     <div class="card bg-light shadow-sm">
                         <div class="d-flex justify-content-center bg-yellow rounded">
@@ -387,13 +676,37 @@
                             </div>
                             <p class="card-text display-6">$3.42</p>
                             <div class="d-flex justify-content-between">
-                                <a href="#" class="btn btn-brown text-white me-2">Details</a>
+                                <a href="#" class="btn btn-brown text-white me-2" data-bs-toggle="modal" data-bs-target="#hamSandwich" tabindex="-1" aria-labelledby="hamSandwichModalLabel" aria-hidden="true">Details</a>
                                 <button class="btn btn-outline-brown display-1 fw-bolder"> &#43;</button>
                             </div>
                         </div>
                     </div>
                 </div>
 
+                <!-- Ham Sandwich Modal -->
+                <div class="modal fade" id="hamSandwich">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="hamSandwichModalLabel">Ham Sandwich</h5>
+                                <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="bg-yellow d-flex justify-content-center rounded">
+                                    <img src="assets/ham-sandwich.png" alt="Ham Sandwich" class="card-img-top img-fluid img-responsive">
+                                </div>
+                                <p class="mt-2">Ingredients: Ham, Cheddar Cheese, Melted Cheese, Lettuces, Onions, and Pickles</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button class="btn btn-success" data-bs-dismiss="modal">OK</button>
+                                <button class="btn btn-outline-brown"> Add to cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Italian Muffuletta Sandwich -->
                 <div class="col-md-4 col-lg-3 my-3">
                     <div class="card bg-light shadow-sm">
                         <div class="d-flex justify-content-center bg-yellow rounded">
@@ -406,17 +719,41 @@
                                 <i class="bi bi-star-fill text-warning"></i>
                                 <i class="bi bi-star-fill text-warning"></i>
                                 <i class="bi bi-star-fill text-warning"></i>
-                                <i class="bi bi-star-half text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
                             </div>
-                            <p class="card-text display-6">$3.86</p>
+                            <p class="card-text display-6">$5.86</p>
                             <div class="d-flex justify-content-between">
-                                <a href="#" class="btn btn-brown text-white me-2">Details</a>
+                                <a href="#" class="btn btn-brown text-white me-2" data-bs-toggle="modal" data-bs-target="#italianMuffulettaSandwich" tabindex="-1" aria-labelledby="italianMuffulettaSandwichModalLabel" aria-hidden="true">Details</a>
                                 <button class="btn btn-outline-brown display-1 fw-bolder"> &#43;</button>
                             </div>
                         </div>
                     </div>
                 </div>
 
+                <!-- Italian Muffuletta Sandwich Modal -->
+                <div class="modal fade" id="italianMuffulettaSandwich">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="italianMuffulettaSandwichModalLabel">Italian Muffuletta Sandwich</h5>
+                                <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="bg-yellow d-flex justify-content-center rounded">
+                                    <img src="assets/Italian-muffuletta-sandwich.png" alt="Italian Muffuletta Sandwich" class="card-img-top img-fluid img-responsive">
+                                </div>
+                                <p class="mt-2">Ingredients: Muffuletta Bread, Ham, Spinach, Provolone Cheese, and Salami</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button class="btn btn-success" data-bs-dismiss="modal">OK</button>
+                                <button class="btn btn-outline-brown"> Add to cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Ciabatta Sandwich -->
                 <div class="col-md-4 col-lg-3 my-3">
                     <div class="card bg-light shadow-sm">
                         <div class="d-flex justify-content-center bg-yellow rounded">
@@ -429,17 +766,41 @@
                                 <i class="bi bi-star-fill text-warning"></i>
                                 <i class="bi bi-star-fill text-warning"></i>
                                 <i class="bi bi-star-fill text-warning"></i>
-                                <i class="bi bi-star text-warning"></i>
+                                <i class="bi bi-star-half text-warning"></i>
                             </div>
-                            <p class="card-text display-6">$3.57</p>
+                            <p class="card-text display-6">$4.27</p>
                             <div class="d-flex justify-content-between">
-                                <a href="#" class="btn btn-brown text-white me-2">Details</a>
+                                <a href="#" class="btn btn-brown text-white me-2" data-bs-toggle="modal" data-bs-target="#ciabattaSandwich" tabindex="-1" aria-labelledby="ciabattaSandwichModalLabel" aria-hidden="true">Details</a>
                                 <button class="btn btn-outline-brown display-1 fw-bolder"> &#43;</button>
                             </div>
                         </div>
                     </div>
                 </div>
 
+                <!-- Ciabatta Sandwich Modal -->
+                <div class="modal fade" id="ciabattaSandwich">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="ciabattaSandwichModalLabel">Ciabatta Sandwich</h5>
+                                <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="bg-yellow d-flex justify-content-center rounded">
+                                    <img src="assets/ciabatta-sandwich.png" alt="Ciabatta Sandwich" class="card-img-top img-fluid img-responsive">
+                                </div>
+                                <p class="mt-2">Ingredients: Ciabatta Bread, Ham, Spinach, Melted Cheese, and Red Bell Pepper</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button class="btn btn-success" data-bs-dismiss="modal">OK</button>
+                                <button class="btn btn-outline-brown"> Add to cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Egg Sandwich -->
                 <div class="col-md-4 col-lg-3 my-3">
                     <div class="card bg-light shadow-sm">
                         <div class="d-flex justify-content-center bg-yellow rounded">
@@ -452,16 +813,39 @@
                                 <i class="bi bi-star-fill text-warning"></i>
                                 <i class="bi bi-star-fill text-warning"></i>
                                 <i class="bi bi-star-fill text-warning"></i>
-                                <i class="bi bi-star-half text-warning"></i>
+                                <i class="bi bi-star text-warning"></i>
                             </div>
-                            <p class="card-text display-6">$3.68</p>
+                            <p class="card-text display-6">$3.24</p>
                             <div class="d-flex justify-content-between">
-                                <a href="#" class="btn btn-brown text-white me-2">Details</a>
+                                <a href="#" class="btn btn-brown text-white me-2" data-bs-toggle="modal" data-bs-target="#eggSandwich" tabindex="-1" aria-labelledby="eggSandwichModalLabel" aria-hidden="true">Details</a>
                                 <button class="btn btn-outline-brown display-1 fw-bolder"> &#43;</button>
                             </div>
                         </div>
                     </div>
                 </div>
+
+                <!-- Egg Sandwich Modal -->
+                <div class="modal fade" id="eggSandwich">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="eggSandwichModalLabel">Egg Sandwich</h5>
+                                <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="bg-yellow d-flex justify-content-center rounded">
+                                    <img src="assets/egg-sandwich.png" alt="Egg Sandwich" class="card-img-top img-fluid img-responsive">
+                                </div>
+                                <p class="mt-2">Ingredients: Egg, Ham, Tomatoes, and Lettuces</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button class="btn btn-success" data-bs-dismiss="modal">OK</button>
+                                <button class="btn btn-outline-brown"> Add to cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
@@ -470,7 +854,7 @@
     <section id="contact">
         <div class="container form-margin">
             <div class="text-center">
-                <h3>Get in Touch</h3>
+                <h3> <i class="bi bi-stars text-warning"></i> Get in Touch <i class="bi bi-stars text-warning"></i></h3>
                 <p class="lead">Any Suggestion? Fill out the form to contact us directly...</p>
             </div>
 
@@ -478,23 +862,40 @@
                 <div class="col-lg-6">
                     <form>
                         <label for="email" class="form-label">E-mail Address</label>
-                        <input type="email" class="form-control" id="email" placeholder="e.g. bob@example.com">
+                        <div class="mb-3 input-group">
+                            <span class="input-group-text">
+                                <i class="bi bi-envelope-fill"></i>
+                            </span>
+                            <input type="email" class="form-control" id="email" placeholder="e.g. bob@example.com">
+                        </div>
 
                         <label for="name" class="form-label mt-2">Name</label>
-                        <input type="text" class="form-control" id="name" placeholder="e.g. Bob">
+                        <div class="mb-3 input-group">
+                            <span class="input-group-text">
+                                <i class="bi bi-person-fill"></i>
+                            </span>
+                            <input type="text" class="form-control" id="name" placeholder="e.g. Bob">
+                        </div>
 
-                        <label for="feedback" class="form-label mt-2">Your Messages</label>
+                        <label for="feedback" class="form-label mb-2 mt-3">Your Messages</label>
                         <textarea id="feedback" class="form-control form-height"></textarea>
 
+
                         <div class="mt-4 text-center">
-                            <button type="submit" class="btn btn-secondary">Submit</button>
+                            <button type="submit" class="btn btn-brown">Submit</button>
                         </div>
                     </form>
                 </div>
             </div>
         </div>
-
     </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container fw-bold">
+            &copy 2022 The Burger Brothers
+        </div>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>

@@ -18,10 +18,12 @@
 .bg-brown,
 .btn-brown {
     background-color: #5f0a00;
+    color: white;
 }
 
 .btn-brown:hover {
     background-color: #360500;
+    color: white;
 }
 
 .btn-outline-brown {
@@ -46,4 +48,11 @@
 
 .form-height {
     height: 140px;
+}
+
+footer {
+    margin-bottom: 0;
+    background-color: #5f0a00;
+    color: #ffc511;
+    font-size: 1.15rem;
 }
