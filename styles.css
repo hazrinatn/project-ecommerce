@@ -1,5 +1,5 @@
 .text-red {
-    color: #bd2c0e;
+    color: #420F05;
 }
 
 .intro-img {
@@ -7,18 +7,17 @@
 }
 
 .text-yellow {
-    color: #ffc511;
+    color: #f8ca3e;
 }
 
 .bg-yellow,
 .btn-yellow {
-    background-color: #ffc511;
+    background-color: #f8ca3e;
 }
 
 .bg-brown,
 .btn-brown {
     background-color: #5f0a00;
-    color: white;
 }
 
 .btn-brown:hover {
@@ -41,6 +40,14 @@
     margin-top: 7rem;
 }
 
+.fs-custom {
+    font-size: 1.35rem;
+}
+
+.title-height {
+    min-height: 57px;
+}
+
 .img-responsive {
     width: auto;
     height: 200px;
@@ -52,7 +59,4 @@
 
 footer {
     margin-bottom: 0;
-    background-color: #5f0a00;
-    color: #ffc511;
-    font-size: 1.15rem;
 }
