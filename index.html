@@ -13,12 +13,12 @@
 </head>
 
 <body>
-    <!-- navbar -->
+    <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark py-1 bg-brown">
         <div class="container">
             <!-- navbar brand / title -->
             <a class="navbar-brand" href="#intro">
-                <span class="fw-bold text-yellow">
+                <span class="fw-bold text-warning">
                     THE BURGER BROTHERS
         </span>
             </a>
@@ -37,7 +37,7 @@
                         <a class="nav-link text-white" href="#product">ORDER</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="#about">ABOUT</a>
+                        <a class="nav-link text-white" href="./about.html">ABOUT</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link text-white" href="#contact">CONTACT</a>
@@ -59,14 +59,20 @@
 
     </nav>
 
+    <!-- Alert -->
+    <div class="alert alert-success alert-dismissible fade show px-5" role="alert">
+        <strong>Holy guacamole!</strong> Check out our new products on March 2, 2022.
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+
     <!-- Intro -->
     <section id="intro" class="bg-yellow">
         <div class="container-sm h-100">
             <div class="row justify-content-between align-items-center py-1">
                 <div class="col-md-8 text-start text-md-start">
                     <h1>
-                        <div class="display-2 fw-bolder">DELICIOUSLY MOUTHWATERING</div>
-                        <div class="display-3 text-red">BURGERS AND SANDWICHES</div>
+                        <div class="display-3 fw-bolder">DELICIOUSLY MOUTHWATERING</div>
+                        <div class="display-4 text-red">BURGERS AND SANDWICHES</div>
                     </h1>
                     <p class="lead my-4">Premium handmade burgers and sandwiches made from high quality ingredients.</p>
                     <a href="#product" class="btn text-white rounded-pill bg-brown">Try Now &#8594;</a>
@@ -77,6 +83,7 @@
             </div>
         </div>
     </section>
+
 
     <!-- Products -->
     <section id="product" class="product-margin">
@@ -893,7 +900,7 @@
 
     <!-- Footer -->
     <footer class="bg-brown">
-        <div class="container fw-bold fs-5 text-yellow">
+        <div class="container fw-bold fs-5 text-warning">
             &copy 2022 The Burger Brothers
         </div>
     </footer>
