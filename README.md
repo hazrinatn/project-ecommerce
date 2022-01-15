@@ -4,7 +4,7 @@ An E-commerce website built using Bootstrap.
 
 ### Live Demo
 
-[Here :zap:](hazrinatn.github.io/project-ecommerce/)
+[Here :zap:](https://hazrinatn.github.io/project-ecommerce/)
 
 ### Credits
 
