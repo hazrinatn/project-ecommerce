@@ -28,6 +28,10 @@
     background-color: #5f0a00;
 }
 
+.bg-reddish {
+    background-color: #df6b54;
+}
+
 .btn-brown:hover {
     background-color: #360500;
     color: white;
