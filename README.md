@@ -6,6 +6,7 @@ An E-commerce website built using Bootstrap.
 
 [Here :zap:](https://hazrinatn.github.io/project-ecommerce/)
 
+### Desktop View
 ![Burger Brothers Web](./project-ecommerce.png "Responsive Web Layout")
 
 ### Credits
